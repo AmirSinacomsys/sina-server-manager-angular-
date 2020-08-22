@@ -8,13 +8,25 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatListModule} from '@angular/material/list';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { ServiceMonitoringComponent } from './components/service-monitoring/service-monitoring.component';
+import { LogManagementComponent } from './components/log-management/log-management.component';
+
+
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    SidebarComponent,
+    DashboardComponent,
+    ServiceMonitoringComponent,
+    LogManagementComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +34,9 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    MatSidenavModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
