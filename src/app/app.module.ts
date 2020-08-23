@@ -14,6 +14,7 @@ import {MatListModule} from '@angular/material/list';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ServiceMonitoringComponent } from './components/service-monitoring/service-monitoring.component';
 import { LogManagementComponent } from './components/log-management/log-management.component';
+import {MatCardModule} from '@angular/material/card';
 
 
 
@@ -36,7 +37,8 @@ import { LogManagementComponent } from './components/log-management/log-manageme
     MatIconModule,
     MatButtonModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
