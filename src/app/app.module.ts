@@ -16,6 +16,7 @@ import { ServiceMonitoringComponent } from './components/service-monitoring/serv
 import { LogManagementComponent } from './components/log-management/log-management.component';
 import {MatCardModule} from '@angular/material/card';
 import { PanelComponent } from './components/panel/panel.component';
+import { DashboardCardComponent } from './components/dashboard-card/dashboard-card.component';
 
 
 
@@ -29,7 +30,8 @@ import { PanelComponent } from './components/panel/panel.component';
     DashboardComponent,
     ServiceMonitoringComponent,
     LogManagementComponent,
-    PanelComponent
+    PanelComponent,
+    DashboardCardComponent
   ],
   imports: [
     BrowserModule,

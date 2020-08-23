@@ -3,13 +3,16 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body{
+  overflow-y: hidden;
+}
 
 .background-primary{
   background-color: #3f51b5;
 }
 
 .background-primary-light{
-  background-color: #9FA8DA;
+  background-color: #9fa8db;
 }
 
 .background-primary-dark{
