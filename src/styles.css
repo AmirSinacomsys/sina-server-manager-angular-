@@ -1,62 +1,78 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-body{
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+body {
   overflow-y: hidden;
 }
 
-.background-primary{
-  background-color: #3f51b5;
+.background-primary {
+  background-color: #1A237E;
 }
 
-.background-primary-light{
+.background-primary-light2 {
   background-color: #9fa8db;
 }
 
-.background-primary-dark{
-  background-color: #283593;
+.background-primary-light1 {
+  background-color: #3F51B5;
 }
 
 
-.background-accent{
-  background-color: #E91E63;
+.background-accent {
+  background-color: #EF6C00;
 }
 
-.background-accent-light{
-  background-color: #F8BBD0;
+.background-accent-light {
+  background-color: #FF9800;
 }
 
-.background-accent-dark{
+/*.background-accent-dark{
   background-color: #AD1457;
+}*/
+
+
+.background-warning {
+  background-color: #F44336;
 }
 
-
-.background-warning{
-  background-color: #E91E63;
-}
-
-.background-warning-light{
+/*.background-warning-light{
   background-color: #F8BBD0;
 }
 
 .background-warning-dark{
   background-color: #AD1457;
-}
+}*/
 
-.color-white-high{
+.color-white-high {
   color: #FFFFFFDE;
 }
 
-.color-white-medium{
+.color-white-medium {
   color: #FFFFFFDD;
 }
 
-.color-white-disable{
+.color-white-disable {
   color: #FFFFFF60;
 }
 
-.color-accent{
-  color: #E91E63;
+.color-accent {
+  color: #EF6C00;
+}
+
+
+.color-positive {
+  color: #00dd00;
+}
+
+.color-negetive {
+  color: red;
 }
