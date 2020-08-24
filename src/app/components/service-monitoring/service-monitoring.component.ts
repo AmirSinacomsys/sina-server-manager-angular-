@@ -9,37 +9,20 @@ import {ServiceMonitoringService} from '../../services/service-monitoring.servic
 })
 export class ServiceMonitoringComponent implements OnInit {
 
-  panelOpenState = false;
+  t1 = 'Service Name';
 
   constructor(private service: ServiceMonitoringService) {
   }
 
-  servicesInf: ServiceInf[];
 
   ngOnInit(): void {
 
-    this.service.getService().subscribe(
-      response => {
-        this.servicesInf = response;
-      }
-    );
 
   }
 
-  public isRunning(str: string): boolean {
-    if (str.toLowerCase() === 'running') {
-      return true;
-    } else {
-      return false;
-    }
-  }
 
+  onClick(s: ServiceInf) {
 
-  activate() {
-    console.log('activated clicked');
-  }
-
-  suspend() {
-    console.log('suspended cliked');
+    console.log(s);
   }
 }

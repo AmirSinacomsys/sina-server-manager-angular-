@@ -18,6 +18,7 @@ import {MatCardModule} from '@angular/material/card';
 import {PanelComponent} from './components/panel/panel.component';
 import {DashboardCardComponent} from './components/dashboard-card/dashboard-card.component';
 import {MatExpansionModule} from '@angular/material/expansion';
+import { ExpansionsComponent } from './components/expansions/expansions.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import {MatExpansionModule} from '@angular/material/expansion';
     ServiceMonitoringComponent,
     LogManagementComponent,
     PanelComponent,
-    DashboardCardComponent
+    DashboardCardComponent,
+    ExpansionsComponent
   ],
   imports: [
     BrowserModule,

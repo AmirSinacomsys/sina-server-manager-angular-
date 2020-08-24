@@ -2,58 +2,7 @@
   <ng-container class="header">Server Main</ng-container>
   <ng-container class="body">
 
-
-    <mat-accordion class="example-headers-align">
-
-      <mat-expansion-panel hideToggle disabled class="background-accent-light  custom-shadow ">
-        <mat-expansion-panel-header class="cursor">
-          <mat-panel-title class="menu-font">
-            Service Name
-          </mat-panel-title>
-
-          <mat-panel-description class="menu-font">
-            Status
-          </mat-panel-description>
-
-          <mat-panel-description class="menu-font">
-            Oparation
-          </mat-panel-description>
-
-        </mat-expansion-panel-header>
-      </mat-expansion-panel>
-
-      <div *ngFor="let service of servicesInf">
-        <mat-expansion-panel
-          (opened)="panelOpenState = true"
-          (closed)="panelOpenState = false">
-          <mat-expansion-panel-header>
-            <mat-panel-title>
-              {{service.serviceName}}
-            </mat-panel-title>
-
-            <mat-panel-description
-              [ngClass]="{
-            'color-negetive' : !isRunning(service.status),
-            'color-positive' : isRunning(service.status)
-            }">
-              {{service.status}}
-            </mat-panel-description>
-
-            <mat-panel-description>
-              <button (click)="suspend()" mat-button *ngIf="isRunning(service.status)"> Suspend</button>
-              <button (click)="activate()" mat-button *ngIf="!isRunning(service.status)"> Activate</button>
-            </mat-panel-description>
-
-
-          </mat-expansion-panel-header>
-          <p>I'm visible because I am open</p>
-        </mat-expansion-panel>
-
-      </div>
-
-
-    </mat-accordion>
-
+    <app-expansions title1="Service Name" title2="Status" title3="Operation" (click)="onClick($event)" ></app-expansions>
 
   </ng-container>
 </app-panel>
